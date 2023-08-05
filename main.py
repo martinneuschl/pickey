@@ -29,7 +29,7 @@ def run_query(query):
 rows = run_query("SELECT word FROM `bigquery-public-data.samples.shakespeare` LIMIT 10")
 
 # Print results.
-st.write("Some wise words from Shakespeare:")
+# st.write("Some wise words from Shakespeare:")
 for row in rows:
     st.write("✍️ " + row['word'])
     """
