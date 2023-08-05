@@ -1,6 +1,11 @@
 # streamlit_app.py
 
 import streamlit as st
+
+header = st.container()
+with header:
+	st.title('Pickey.cz')
+st.markdown('Analytika pro tvůrce - proof-of-concept. Cílem tohoto dema je ukázat interaktivní reporting, který ukazuje data z Google Analytics 4. Každý tvůrce bude mít náhled pouze na svá data a má tak možnost získat okamžitý přehled o výkonu svého profilu na Pickey.')
 from google.oauth2 import service_account
 from google.cloud import bigquery
 
